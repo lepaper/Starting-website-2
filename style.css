@@ -378,15 +378,51 @@ a:hover {
     position: relative;
     z-index: 2;
 }
+.col-sm-12 img {
+    width: 100px;
+}
+div#bloc-1-hero {
+    background-color: darkblue;
+}
+div#bloc-5-cta {
+    background-color: darkblue;
+}
 
+.col-sm-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col-sm-12 p.text-center {
+    
+    font-weight: 600;
+    
+}
+span.sr-only {
+    visibility: hidden;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}   
+.form#form_1 {
+        font-weight: 600;
+}
+.boutton{
+    background-color: #F3976C;
+    width: 260px;
+}
+.text-center a {
+    color: #ffffff;
+}
 @media (min-width: 768px) {
-    .site-navigation {
+    /*.site-navigation {
         position: absolute;
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
-    }
+    }*/
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -493,6 +529,8 @@ button {
 }
 
 .icon-md {
+    height: 48px;
+    width: 48px;
     font-size: 30px!important;
 }
 
@@ -556,7 +594,7 @@ a[data-lightbox] {
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-    font-size: 32px;
+    font-size: 20px;
     width: 50px;
     height: 50px;
     margin-left: -25px;
@@ -605,7 +643,7 @@ a[data-lightbox]:hover img {
 
 .close-lightbox {
     color: #FFF;
-    font-size: 30px;
+    font-size: 15px;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -676,7 +714,8 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 38px;
+    text-align: center;
+    /*font-size: 38px;*/
 }
 
 .hero-bloc-text-sub {
@@ -694,7 +733,8 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 15px;
+    text-align: center;
 }
 
 .tight-width-whitespace {
@@ -705,13 +745,14 @@ p {
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
+    font-weight: 600;
 }
 
 .cta-hero {
     margin-top: 22px;
     color: #FFFFFF!important;
-    text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
+    /*text-transform: uppercase;*/
+    padding: 12px 92px;
     font-size: 16px;
     font-weight: 700;
 }
@@ -727,21 +768,31 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
-    text-transform: uppercase;
+    font-size: 12px;
+    /*text-transform: uppercase;*/
     font-weight: 700;
-    color: #333333!important;
+    color: #000000/*#333333!important*/;
 }
-
+h3.mg-md.text-center.tc-white {
+    font-size: 13px;
+    font-weight: 600;
+}
+p.text-center.white {
+    font-size: 11px;
+}
+h5.mg-md.text-center.tc-white {
+    font-size: 24px;
+    font-weight: 400;
+}
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
+/*h1 {
     color: #333333!important;
-}
+}*/
 
 h4 {
     color: #333333!important;
@@ -764,14 +815,16 @@ h4 {
     margin-bottom: 44px;
     margin-top: 50px;
 }
-
+.portfolio img{
+    width: 170px;
+}
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+    padding: 10px 10px 10px 10px;
 }
 
 .bold-link {
@@ -797,12 +850,12 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000/*#FFFFFF*/!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #000/*#FFFFFF*/!important;
 }
 
 .ltc-white {
@@ -827,19 +880,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img-webp/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img-webp/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img-webp/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img-webp/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -853,6 +906,30 @@ h4 {
     .bloc-tile-4.full-width-bloc .container {
         padding-left: 0;
         padding-right: 0;
+    }
+    .col-sm-8 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-sm-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .label{
+        max-width: 100%;
+    }
+    input[type="text"] {
+        background-color: #f2f2f2;
+        width: 100%;
+        border: none;
+    }
+    h4.mg-md.text-center {
+        font-size: 15px;
+    }
+    p.text-center{
+        font-size: 13px;
     }
 }
 
@@ -878,9 +955,9 @@ h4 {
 }
 
 @media (max-width: 991px) {
-    .container {
+    /*.container {
         width: 100%;
-    }
+    }*/
     .b-parallax {
         background-attachment: scroll;
     }
@@ -889,10 +966,10 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
+    /*.bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    }*/
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -901,8 +978,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        /*padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);*/
     }
 }
 
@@ -974,7 +1051,7 @@ h4 {
     }
     .navbar-collapse {
         padding: 0;
-        overflow-x: hidden;
+        /*overflow-x: hidden;*/
         -webkit-box-shadow: none;
         box-shadow: none;
     }
@@ -1029,6 +1106,8 @@ h4 {
     }
     form {
         padding: 5px;
+        font-size: 14px;
+        font-weight: 600;
     }
     .close-lightbox {
         display: inline-block;
@@ -1043,12 +1122,40 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .collapse{
+        display: none;
+    
+    }
+    .navbar-toggle .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        margin-top: 4px;
+    }
+    
+    .navbar-toggle {
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        margin-top: 8px;
+        margin-right: 15px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    .tight-width-whitespace portfolio-row{
+        display:flex;
     }
 }
 
